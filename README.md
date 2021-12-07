@@ -34,4 +34,4 @@ Please submit a proposal and outline of your project in pdf or Word format.  You
   
 8.  Who's GitHub account are you planning on using to host this project?  
   
-*Josh Gladwell*  
+*The class github organization*  
