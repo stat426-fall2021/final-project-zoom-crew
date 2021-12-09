@@ -20,4 +20,4 @@ data = pd.read_csv('ratings_clean.csv')
 corr = data.corr()
 corr.syle.background_gradient(cmap='coolwarm')
 ```
-![Corr Plot](https://github.com/stat426-fall2021/final-project-zoom-crew/tree/main/Images/CorrPlot.png)
+![Corr Plot](/Images/CorrPlot.png)
