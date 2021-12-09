@@ -22,6 +22,7 @@ data = pd.read_csv('ratings_clean.csv')
 corr = data.corr()
 corr.syle.background_gradient(cmap='coolwarm')
 ```
+<<<<<<< HEAD
 ![Corr Plot](Images/CorrPlot.png)
 
 ### Analysis
@@ -183,3 +184,6 @@ plt.title("Scatterplot between Y_test and Predicted values with Decision Tree", 
 
 ### Conclusion
 In all of the models, we were able to make a close prediction. the Linear Regression model was the weakest relationship of the bunch, but the other models worked relatively well.
+=======
+![Corr Plot](/Images/CorrPlot.PNG)
+>>>>>>> 3c269dd755e2030a27b24230aa6a8a466df82b03
