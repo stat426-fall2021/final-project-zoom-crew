@@ -22,7 +22,7 @@ data = pd.read_csv('ratings_clean.csv')
 corr = data.corr()
 corr.syle.background_gradient(cmap='coolwarm')
 ```
-![Corr Plot](Images/CorrPlot.png)
+![Corr Plot](Images/CorrPlot.PNG)
 
 ### Analysis
 
