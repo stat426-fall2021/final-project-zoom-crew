@@ -78,6 +78,8 @@ print(np.mean(MAE_dt)*-1)
 
 12.220234259501556
 ```
+Based on this metric of Mean Absolute Error, Lasso is closest with an average error of only 9.9, as opposed to Linear Regression, which has an average error much higher.
+
 
 ```
 # Cross Validation score for Mean Squared Error
@@ -106,6 +108,8 @@ print(np.mean(MSE_dt)*-1)
 
 240.77650113730147
 ```
+Here we have Lasso performing the best with a mean squared error of aroudn 154. 
+
 ```
 # Cross Validation score for Root Mean Squared Error
 
@@ -133,8 +137,9 @@ print(np.mean(RMSE_dt)*-1)
 
 15.600191607587442
 ```
+And finally the Root mean squared error shows to us for the third time that Lasso Regression is the best for this data.
 
-Okay, that was a lot of code to look at to test the models. We can see that Linear Regression is the worst at predicting, with much higher error rates than the others. It looks like the Lasso model is much more accurate for this job. regardless, lets predict the scores using test data.
+We can see that Linear Regression is the worst at predicting, with much higher error rates than the others. The Lasso model is much more accurate for this job. regardless, lets predict the scores using test data.
 
 ```
 yhat_las = laspipe.predict(X_test)
@@ -184,6 +189,8 @@ plt.title("Scatterplot between Y_test and Predicted values with Decision Tree", 
 ![Lasso Plot](Images/DTScatter.PNG)
 
 ### Conclusion
-In all of the models, we were able to make a close prediction. the Linear Regression model was the weakest relationship of the bunch, but the other models worked relatively well.
+In all of the models, we were able to make a close prediction. the Linear Regression model was the weakest relationship of the bunch, And the Lasso model performed much better.
+
+We did not have the capability to test all factors though. In future analysis, we would hope to include important features such as Actors, Directors, and Screenwriters to better predict how a movie will perform critically.
 
 
